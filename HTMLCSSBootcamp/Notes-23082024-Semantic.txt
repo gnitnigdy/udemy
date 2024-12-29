@@ -1,0 +1,21 @@
+Spans
+=====
+1. Spans => generic inline elements, that can be styled using css
+(Inline Elements)
+
+Divs
+=====
+1. Div => mean division, generic container to group content together
+(Block Elements)
+
+
+Semantic Markups
+================
+1. HTML Tags mark something about the meaning of the content
+2. Benefits of Using Semantics:
+    a. Accessibility -> screen reader friendly
+    b. Search Engines -> create easier to search from the pov of SEO
+    c. Developer Sanity -> developer easier to understand the code
+3. Examples:
+    a. <main></main> -> the dominant content of the pages
+    b.

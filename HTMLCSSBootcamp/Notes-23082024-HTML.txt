@@ -1,0 +1,49 @@
+Headings
+========
+1. Structuring documents
+2. Thinking this is as hierarchy.
+3. Never use the next number if you dont have any previous before.
+
+
+Ordered & Unordered List
+========================
+1. Ordered List -> With Number
+Example:
+    <ol>
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+    </ol>
+2. Unordered List -> With Bullet
+Example:
+    <ul>
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+    </ul>
+3. It can be mix-nested
+
+Emphasis
+========
+1. stressed text that have meaning
+
+Strong
+========
+1. stressed text that have special significance
+
+Superscript + Subscript
+=======================
+1. Sup -> for raising text from the base-line (17th or exponent)
+2. Sub -> to drown text under baseline (H2O)
+
+Inline vs Block Elements
+========================
+1. Block elements -> take full width of screen
+2. Inline elements -> take as the contain width
+
+
+Link
+====
+To create link there needs two:
+1. Link text -> Text description that where link will go to
+2. Destination -> the address that will be accesss

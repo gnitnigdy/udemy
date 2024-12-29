@@ -1,0 +1,26 @@
+For Loops in Python
+===================
+1. Iterable Object is collection of data, example is list or strings
+
+for item in iterable_object:
+    #something to do
+
+for number in range(start,end):
+    #something to do
+
+Ranges
+===================
+simple way to create sequence of number
+range(1,8) => including 1, excluding 8
+range(1,10,2) => including 1, excluding 10, step by 2
+range(7,0,-1) => including 7, excluding 0, descending
+range(10) => start from 0 to 9
+
+
+While loops in Python
+=====================
+condition = None
+while condition:
+    #something to do
+
+#print("\U0001f600")

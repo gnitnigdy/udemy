@@ -1,0 +1,60 @@
+Variable -> place to store value/information.
+
+restriction of naming Variable:
+1. must start with letter or underscore (cats / _cats)
+2. rest of name must consist of letters, numbers, or underscore
+3. case sensitive
+
+Variable naming convention:
+1. snake_case
+2. camelCase
+3. CAPITAL_SNAKE_CASE for constants
+4. UpperCamelCase refers to Class
+5. __test__ (dunder) for private variable
+
+
+common variable data types in python:
+1. bool => True or False
+2. int => integer => (3,4,5)
+3. str => string => "dummy"
+4. list / array => [1,2,3]
+5. dict / object => {"first_name" : "damenta"}
+
+dynamic typing:
+variables can change types (inter-data type)
+
+
+Special Values in Variable (None):
+Version of NULL in python
+
+
+Declaring Strings (Double vs Single Quotes):
+1. Does not really matter
+
+String Escape Characters:
+1. Using backslash following with any code (Ex : \n => enter new line)
+
+String Concatenation (Adding strings together):
+1. Only working with strings (if 8 + "hello" => not working)
+2. can use += between strings in variable
+
+
+String Formatting (using F function in python > 3.6 version):
+guess = 8
+print(f"your guess is {guess}")
+
+For (Python 2 -> 3.5) => using .format method
+print("Your guess is {}".format(10))
+
+
+String and Indexes (Indicies):
+name = "damenta"
+name[0] = "d"
+name[1] = "a"
+name[-1] = "a" -> from the back of the strings
+
+Converting data types in Python:
+1. In str interpolation all converted into string
+2. convert float to int => int(12.34) => 12
+3. convert to string => str(123) => "123"
+4. convert to float => float(12) => 12.0

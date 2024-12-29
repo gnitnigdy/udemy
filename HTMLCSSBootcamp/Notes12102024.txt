@@ -1,0 +1,16 @@
+Adjacent combinator
+// select directly after the first element
+h1 + p{
+
+}
+
+//sibling combinator
+//
+h1 ~ p{
+
+}
+
+
+//pseudo element
+
+li:nth-of-type(3n) -> means every 3th element

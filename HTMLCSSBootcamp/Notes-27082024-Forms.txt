@@ -1,0 +1,57 @@
+Forms
+=====
+1. What inputs are part of the form (Group Form Controls)?
+2. Where does the form data go when submitted? (Send Data Somewhere)
+
+Text inputs
+===========
+1. Example : <input type="text">
+2. No need closing tags
+
+Buttons
+=======
+1. Type submit will send the data in Forms
+2. Have closing tags
+3. Inline Elements
+
+
+Name and Placeholder
+====================
+1. Name attributes => not to label the form in screen, but labeling data to send somewhere when click action
+2. Placeholder -> labeling the form element inside the elements
+
+
+Labels
+======
+1. Match a label element to a form control using the for attributes
+2. Must match the id attribute on an input
+3. Example:
+    <label for="txtUsername">Username</label>
+    <input id="txtUsername" type="text">
+
+TextArea
+========
+1. To create a multi-line text input
+2. Example:
+    <TextArea rows="10" cols="20"></TextArea>
+
+Range
+=====
+1. Example: <input type="range" min="0" max="10">
+2. to create range input such like volume level
+
+Checkbox
+========
+1. Example:
+    <label for="chkAgreement">I agree to meet terms and conditions for services</label>
+    <input type="checbox" id="chkAgreement" name="chkAgreement">
+
+Selects
+=======
+1. Example:
+    <label for="idselect">Select your choice</label>
+    <select name="" id="">
+        <option value="">text1</option>
+        <option value="">text1</option>
+        <option value="">text1</option>
+    </select>

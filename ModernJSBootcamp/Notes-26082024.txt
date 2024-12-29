@@ -1,0 +1,36 @@
+Primitive Types in Variables JS
+===============================
+1. Number
+    -> Positive, Negative, Float is all Number Types.
+    -> There are mathematics operation such as addition, substratction
+       multiplication, division, and modulo.
+    -> NaN -> is Not A Number but it is a type of number variables.
+    -> 
+2. String
+3. Boolean
+4. Null
+5. Undefined
+6. Symbol
+7. BigInt
+
+
+Variables
+=========
+1. To store value, by giving name, and can recall it later
+2. Example (let x = "string")
+3. Const -> cannot change the value not like let
+4. Can change type (dynamic typing)
+
+Boolean
+========
+1. simply true or false
+2. example : let isLoggedin = true (Yes/No value - 1/0 value)
+
+String
+======
+1. String has property of length
+2. String is immutable when it individual characters
+3. Methods -> built in pieces of functionality
+4. Using indexOf and get -1 represent that thing that we looking is not found
+5. Slice is not mutating
+6. Replace => string.replace("what to replace", "replace with we want")
