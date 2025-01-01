@@ -1,0 +1,25 @@
+CSS Units
+================================================================
+
+There are 2 types of units:
+a. relative : em, rem, vh, vw, %, and more
+b. absolute: px, pt, cm, in, mm
+
+================================================================
+Percentages
+================================================================
+Percentages are always relative to some other value.
+> Sometimes it is a value from the parent and other times it is a value from the
+element itself.
+
+> width: 50% - half the width of the parent.
+> line-height: 50% - half the font-size of the element itself.
+
+================================================================
+REM (Root em)
+================================================================
+
+It means that the element relative to the root html element's font-size.
+Often easier to work with it.
+
+If the root font-size is 20px, 1 rem is always 20px, 2 rem is 40px etcs.
