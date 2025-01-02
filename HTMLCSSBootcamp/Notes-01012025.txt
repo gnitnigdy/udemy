@@ -23,3 +23,23 @@ It means that the element relative to the root html element's font-size.
 Often easier to work with it.
 
 If the root font-size is 20px, 1 rem is always 20px, 2 rem is 40px etcs.
+
+================================================================
+What should we use?
+================================================================
+
+px -> avoid for font size. use px for small details like borders and shadows
+
+rem/em -> for font size and often for padding and margin
+
+% -> useful for defining layouts and widths
+
+vh/vw -> used for larger layout concerns
+
+================================================================
+Floats
+================================================================
+
+Float tells an element to position itself in the left or right side of its container.
+It gets removed from the normal document flow, which allows text and inline elements to wrap around it.
+
