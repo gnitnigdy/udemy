@@ -1,0 +1,28 @@
+Arrays => ORDERED collections of values
+
+ //ways to create Array
+
+ 1. direct initialization
+  examples:: let lotto = [1,2,3,4,5,6,7,8,9]
+ 2. create using Array objects
+  examples:: let arr = new Array(1,2,3,4,5,6,7,8,9)
+
+
+//accessing Array
+1. using index => lotto[0..endIndex(length-1)]
+2. if accessing index that is not defined, will get undefined
+
+
+//modyfing array
+let strToTest = "Hello";
+strToTest[0] = "h";
+console.log(strToTest); // not changin -> strings are immutable
+let strArrToTest = ["H", "e", "l", "l", "o"];
+strArrToTest[0] = "h";
+console.log(strArrToTest); // changing -> arrays are immutable
+
+//array adding&removing methods
+1. push => adds element to the end of the array
+2. pop => removes the last element from the array
+3. unshift => adds element to the start of the array
+4. shift => removes the first element from the array
