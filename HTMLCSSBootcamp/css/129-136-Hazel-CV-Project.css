@@ -1,8 +1,8 @@
-* {
+body {
+  font-family: "Forum", cursive;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid gray;
 }
 
 /* hero section */
@@ -15,10 +15,30 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: white;
+  padding: 24px 32px;
+}
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: 1.2rem;
 }
 
-.navbar-menu {
-  display: flex;
-  align-items: center;
+.navbar-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-cta .contact {
+  background-color: white;
+  color: #f08e80;
+  padding: 16px 24px;
+  text-decoration: none;
+}
+
+.navbar-cta .contact:hover {
+  opacity: 0.8;
 }
