@@ -95,3 +95,44 @@ function getPlayingCard() {
 
 let playingCards = getPlayingCard();
 console.log(playingCards);
+
+//function challenge 1 -> password validator
+
+function isValidPassword(password, username) {
+  if (password.length < 8) {
+    return false;
+  } else {
+    if (password.indexOf(" ") !== -1) {
+      return false;
+    }
+    if (password.indexOf(username) !== -1) {
+      return false;
+    }
+  }
+  return true;
+}
+
+let passwordValidator = isValidPassword("chicken1234", "dummy");
+console.log(passwordValidator);
+
+//function challenge 3 -> pangram -> including all of alphabets
+
+function isPangram(str) {
+  let arrStr = str.toLowerCase().split("");
+  let tempObj = {};
+  let tempResult = 0;
+  for (let i = 0; i < arrStr.length; i++) {
+    if (arrStr[i] === " ") {
+      continue;
+    } else {
+      tempObj[arrStr[i]] = (tempObj[arrStr[i]] || 0) + 1;
+    }
+  }
+  for (let key in tempObj) {
+    tempResult++;
+  }
+  console.log(tempObj);
+  return tempResult === 26 ? true : false;
+}
+let validPangram = isPangram("The five boxing wizards jump quickly");
+console.log(validPangram);
