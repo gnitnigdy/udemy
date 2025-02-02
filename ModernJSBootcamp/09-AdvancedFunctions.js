@@ -49,7 +49,7 @@ function repeatNTimes(func, nums) {
 
 //repeatNTimes(laugh, 10);
 
-//function as return
+//function as returning value
 
 function pickOne(func1, func2, nums) {
   if (nums === 1) {
@@ -60,3 +60,25 @@ function pickOne(func1, func2, nums) {
 }
 
 pickOne(laugh, cry, 3);
+
+//function return as function factory
+
+function multiplyBy(num) {
+  return function (num2) {
+    return num * num2;
+  };
+}
+
+const triple = multiplyBy(3);
+console.log(triple(5));
+
+function makeBetweenFunc(x, y) {
+  return function (num) {
+    return num >= x && num <= y;
+  };
+}
+
+const isChild = makeBetweenFunc(0, 18);
+console.log(isChild(17));
+
+//Callbacks Function -? a function passed into another function as an argument. which is then invoked inside the outer function
