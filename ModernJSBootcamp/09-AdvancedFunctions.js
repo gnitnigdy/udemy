@@ -82,3 +82,27 @@ const isChild = makeBetweenFunc(0, 18);
 console.log(isChild(17));
 
 //Callbacks Function -? a function passed into another function as an argument. which is then invoked inside the outer function
+
+function grumpus() {
+  alert(`go away!`);
+}
+
+// const btnTest = document.querySelector("button");
+// btnTest.addEventListener("click", function () {
+//   alert(`why you click me?`);
+// });
+
+//Hoisting -> accessing something that not initialized yet.
+//example:
+
+//fully hoisted in function declaration
+sayHi();
+function sayHi() {
+  console.log(`Hi!!!`);
+}
+
+//hoisted but gone to TDZ (Temporal Death Zone) => using let and const
+console.log(namaAnes);
+let namaAnes = "damenta";
+
+//Hindari hoisting dengan mendeklarasikan variabel dan fungsi di awal scope untuk kode yang lebih mudah dipahami!
