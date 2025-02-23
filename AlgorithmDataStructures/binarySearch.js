@@ -55,5 +55,5 @@ function binarySearchRefactor(arr, val) {
   return arr[middle] === val ? middle : -1;
 }
 
-let z = binarySearchRefactor([5, 3, 2, 4, 1], 2);
+let z = binarySearchRefactor([5, 7, 2, 3, 4, 9, 0, 1, 2, 8, 5, 6], 5);
 console.log(z);
