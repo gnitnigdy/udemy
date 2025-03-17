@@ -1,0 +1,90 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* navbar section */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* film terpopuler */
+.movie-card {
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #1a1d29;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+}
+.movie-card img {
+  height: 400px;
+  object-fit: cover;
+}
+.movie-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  color: #f1f1f1;
+}
+
+/* Langganan */
+.pricing-card {
+  background-color: #1a1d29;
+  color: #ececec;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #0063e5;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #004bb5;
+}
+
+/* footer section */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+#contMovies {
+  background-color: #003d4d;
+  color: white;
+}
+.btn-custom {
+  background-color: #1f80e0;
+  color: white;
+  border-radius: 20px;
+}
+.btn-custom:hover {
+  background-color: #1465c0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fixed-image {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}

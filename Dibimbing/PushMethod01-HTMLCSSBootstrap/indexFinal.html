@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Disney Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/svg-2.svg"
+            height="40"
+            alt="Disney"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselExample">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#why">Why Us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trending-series">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trending-movies">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contMovies">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" href="#price">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/img/wall-1.jpg"
+            class="d-block w-100"
+            alt="Judul Film 1"
+          />
+          <div class="carousel-caption">
+            <h5>Captain America: The First Avenger</h5>
+            <p>
+              Steve Rogers becomes Captain America after receiving the Super
+              Soldier Serum. He fights Hydra and Red Skull during World War II.
+              His heroic sacrifice leads to decades of cryogenic sleep.
+            </p>
+            <a href="#price" class="btn btn-danger">Watch Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/wall-2.jpg"
+            class="d-block w-100"
+            alt="Judul Film 2"
+          />
+          <div class="carousel-caption">
+            <h5>Captain America: The Winter Soldier</h5>
+            <p>
+              Steve Rogers uncovers a Hydra conspiracy within S.H.I.E.L.D. while
+              facing the mysterious Winter Soldier. With Black Widow and Falcon,
+              he battles corruption and fights for the truth.
+            </p>
+            <a href="#price" class="btn btn-danger">Watch Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/wall-3.jpg"
+            class="d-block w-100"
+            alt="Judul Film 3"
+          />
+          <div class="carousel-caption">
+            <h5>Captain America: Civil War</h5>
+            <p>
+              The Avengers split over the Sokovia Accords, leading to a conflict
+              between Captain America and Iron Man. Steve protects Bucky, while
+              friendships and alliances are tested in an epic battle.
+            </p>
+            <a href="#price" class="btn btn-danger">Watch Now</a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Langganan -->
+    <div id="why" class="container mt-5">
+      <h2 class="text-center mb-4">Why Subscribe to Us?</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="assets/img/lifestyle-1.jpg"
+            class="img-fluid rounded"
+            alt="Mengapa Berlangganan"
+          />
+        </div>
+        <div class="col-md-6">
+          <p>
+            Watching movies is not just entertainment—it’s an experience that
+            becomes even better with the right platform. We provide the best
+            personalized movie recommendations and exclusive access to
+            high-quality films. With advanced technology and premium features,
+            we ensure a seamless, ad-free, and up-to-date streaming experience.
+          </p>
+          <ul>
+            <li>
+              <strong>Smart Movie Recommendations</strong> – Our AI-powered
+              system suggests movies tailored to your preferences and mood.
+            </li>
+            <li>
+              <strong>Extensive Movie Collection</strong> – Access a wide range
+              of genres, from action and romance to thrillers and documentaries.
+            </li>
+            <li>
+              <strong>High-Quality Streaming</strong> – Enjoy movies in HD, Full
+              HD, and 4K Ultra HD with zero buffering.
+            </li>
+            <li>
+              <strong>Offline Download Feature</strong> – Save movies and watch
+              them anytime, anywhere, without an internet connection.
+            </li>
+            <li>
+              <strong>Latest Movie Updates</strong> – Get exclusive access to
+              trending and newly released films faster than other platforms.
+            </li>
+          </ul>
+          <a href="#price" class="btn btn-primary w-100">Subscribe Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Content Section -->
+    <div id="trending-series" class="container mt-4">
+      <h3>Trending Series</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="assets/img/startup-1.jpg" class="img-fluid" alt="Movie 1" />
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/startup-1.jpg" class="img-fluid" alt="Movie 2" />
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/startup-1.jpg" class="img-fluid" alt="Movie 3" />
+        </div>
+        <div class="col-md-3">
+          <img src="assets/img/startup-1.jpg" class="img-fluid" alt="Movie 4" />
+        </div>
+      </div>
+    </div>
+    <div id="trending-movies" class="container mt-5">
+      <h3 class="mb-4">Trending Movies</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card movie-card">
+            <img
+              src="assets/img/trending-1.jpg"
+              class="card-img-top"
+              alt="Film 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Star Wars: Rise of the Skywalker</h5>
+              <p class="card-text">
+                Rey faces her destiny in an epic battle against the revived
+                Emperor Palpatine, while the Resistance fights for the galaxy’s
+                future.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card movie-card">
+            <img
+              src="assets/img/trending-2.jpg"
+              class="card-img-top"
+              alt="Film 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Star Wars: Return of the Jedi</h5>
+              <p class="card-text">
+                Luke Skywalker confronts Darth Vader and Emperor Palpatine,
+                leading to a climactic battle that determines the fate of the
+                Rebel Alliance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card movie-card">
+            <img
+              src="assets/img/trending-3.jpg"
+              class="card-img-top"
+              alt="Film 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Star Wars: The Phantom Menace</h5>
+              <p class="card-text">
+                A young Anakin Skywalker is discovered by Jedi as political
+                conflicts escalate, leading to a dangerous confrontation with
+                the Sith’s dark forces.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card movie-card">
+            <img
+              src="assets/img/film-1.jpg"
+              class="card-img-top"
+              alt="Film 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Captain America: The Winter Soldier</h5>
+              <p class="card-text">
+                Steve Rogers uncovers a Hydra conspiracy within S.H.I.E.L.D.
+                while facing his brainwashed best friend, Bucky, now the deadly
+                Winter Soldier
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Plan -->
+    <div id="price" class="container mt-5">
+      <h2 class="text-center mb-4">Our Subscription Plan</h2>
+      <p class="text-center">
+        Great Movies, Perfect Recommendations, and Exclusive Access! Subscribe
+        Now!
+      </p>
+      <p></p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h4>Basic Plan</h4>
+            <p>Top movies recommendations and HD quality streaming with ads.</p>
+            <h3>Rp 49,000/month</h3>
+            <a href="#price" class="btn btn-primary">Subscribe Now!</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h4>Standard Plan</h4>
+            <p>
+              Top movies recommendations and Full HD quality streaming without
+              ads.
+            </p>
+            <h3>Rp 99.000/month</h3>
+            <a href="#price" class="btn btn-primary">Subscribe Now!</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing-card">
+            <h4>Premium Plan</h4>
+            <p>
+              Top movies recommendations and 4K quality streaming + offline
+              downloads.
+            </p>
+            <h3>Rp 149.000/month</h3>
+            <a href="#price" class="btn btn-primary">Subscribe Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start of Article -->
+    <div id="contMovies" class="container mt-5">
+      <div class="container py-5">
+        <h2 class="text-center">What's new on Our Platform!</h2>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <img
+              src="assets/img/startup-2.jpg"
+              class="img-fluid"
+              alt="Unmasked"
+            />
+            <h4>Our Beloved Summer</h4>
+            <p>
+              A heartwarming romance about ex-lovers who reunite years after a
+              viral documentary they starred in, rediscovering love and personal
+              growth.
+            </p>
+            <a
+              href="#price"
+              class="btn btn-warning text-info w-100 text-black bold"
+              >Watch Now!</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/img/startup-3.jpg"
+              class="img-fluid"
+              alt="Alien Romulus"
+            />
+            <h4>Snowdrop</h4>
+            <p>
+              A gripping melodrama set in 1987, where a university student
+              shelters an injured spy, leading to forbidden love amid political
+              turmoil.
+            </p>
+            <a
+              href="#price"
+              class="btn btn-warning text-info w-100 text-black bold"
+              >Watch Now!</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <h2 class="text-center">Now streaming on Our Platform!</h2>
+        <div class="row mt-4">
+          <div class="col-6 col-md-2">
+            <img
+              src="assets/img/film-1.jpg"
+              class="img-fluid fixed-image"
+              alt="movie1"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="assets/img/film-2.jpeg"
+              class="img-fluid fixed-image"
+              alt="movie1"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="assets/img/film-3.jpg"
+              class="img-fluid fixed-image"
+              alt="movie1"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="assets/img/film-4.jpg"
+              class="img-fluid fixed-image"
+              alt="movie1"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="assets/img/film-5.jpeg"
+              class="img-fluid fixed-image"
+              alt="movie1"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="assets/img/film-6.jpg"
+              class="img-fluid fixed-image"
+              alt="movie1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container py-5">
+        <h2 class="text-center">
+          Watch the latest trailer for the upcoming movies
+        </h2>
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/hUUszE29jS0"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="col-md-3">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/_zHPsmXCjB0"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="col-md-3">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/AzMo-FgRp64"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="col-md-3">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/_BNU-31nLfk"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center py-4">
+        <button class="btn btn-custom px-4 py-2">SIGN UP NOW</button>
+      </div>
+      <!-- End of Article -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-4">
+      <div class="container">
+        <p class="bold">
+          &copy; 2025 Movies Recommendator. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
