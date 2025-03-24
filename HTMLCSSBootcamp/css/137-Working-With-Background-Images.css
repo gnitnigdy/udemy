@@ -1,0 +1,29 @@
+/**
+
+*/
+.box {
+  border: 1px solid red;
+  height: 400px;
+  width: 200px;
+  /* can use for multiple background separated by commas: url(), url() */
+  /*background-image: url("/udemy/HTMLCSSBootcamp/assets/section17/Starter/images/peacock.png");*/
+  background-color: aquamarine;
+  /* controlling repeating of background */
+  /*background-repeat: repeat;*/
+  background-image: url("/udemy/HTMLCSSBootcamp/assets/section17/Starter/images/woman.jpg");
+  background-size: cover;
+  background-position: top right;
+}
+
+.margin-20 {
+  margin-top: 20px;
+}
+
+.box2 {
+  border: 20px dashed red;
+  height: 400px;
+  width: 400px;
+  padding: 30px;
+  background-image: url("/udemy/HTMLCSSBootcamp/assets/section17/Starter/images/woman.jpg");
+  background-clip: content-box;
+}

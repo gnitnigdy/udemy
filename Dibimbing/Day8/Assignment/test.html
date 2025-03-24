@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Perusahaan Kami</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        width: 48%;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      .form-group {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tentang Perusahaan Kami</h2>
+      <div class="section">
+        <img src="image.png" alt="Company" width="100%" />
+      </div>
+
+      <div class="section flex-container">
+        <div class="box">
+          <h3>A. Struktur Perusahaan</h3>
+          <p>1. CEO: <strong>George Phillips</strong></p>
+        </div>
+        <div class="box">
+          <p>2. CTO: <strong>Vishal Singh</strong></p>
+          <p>3. Divisi Finance & Accounting</p>
+          <ul>
+            <li>Manager: <strong>Angelo Hayes</strong></li>
+            <li>Anggota: Jacob Hayes, Louis Tomlinson</li>
+          </ul>
+          <p>4. Divisi IT Technology</p>
+          <ul>
+            <li>Manager: <strong>Aditya Ishaan Akhil</strong></li>
+            <li>Anggota: Jacqueline Larson, Ravindra Singh</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>B. Form Registrasi Karyawan Baru</h3>
+        <form>
+          <div class="form-group">
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" required />
+          </div>
+          <div class="form-group">
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" required />
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label>Pilih divisi:</label><br />
+            <input type="radio" name="divisi" value="Finance" /> Finance &
+            Accounting <input type="radio" name="divisi" value="IT" /> IT
+            Technology
+          </div>
+          <div class="form-group">
+            <label>Pilih jadwal WFO:</label><br />
+            <input type="checkbox" name="wfo" value="Senin" /> Senin
+            <input type="checkbox" name="wfo" value="Selasa" /> Selasa
+            <input type="checkbox" name="wfo" value="Rabu" /> Rabu
+            <input type="checkbox" name="wfo" value="Kamis" /> Kamis
+            <input type="checkbox" name="wfo" value="Jumat" /> Jumat
+          </div>
+          <div class="form-group">
+            <label>Upload Foto ID Card:</label>
+            <input type="file" name="foto" required />
+          </div>
+          <div class="form-group">
+            <label>Catatan Tambahan:</label>
+            <textarea name="catatan"></textarea>
+          </div>
+          <button type="submit">Submit Form</button>
+        </form>
+      </div>
+
+      <div class="section">
+        <h3>C. Tabel Data Karyawan</h3>
+        <table>
+          <tr>
+            <th>ID Karyawan</th>
+            <th>Nama Lengkap</th>
+            <th>Divisi</th>
+            <th>Jadwal WFO</th>
+            <th>Alamat Email</th>
+            <th>Foto Karyawan</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>IT Technology</td>
+            <td>Selasa, Rabu, Jumat</td>
+            <td>johndoe@company.com</td>
+            <td><img src="image.png" width="50" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Christina Liauw</td>
+            <td>Finance & Accounting</td>
+            <td>Senin, Selasa, Kamis</td>
+            <td>christinaliauw@company.com</td>
+            <td><img src="image.png" width="50" /></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

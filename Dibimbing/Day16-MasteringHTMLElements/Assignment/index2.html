@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Assignment Day 16 - Yohanes Damenta</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Section 1: Tentang Perusahaan -->
+      <h1 class="title">Tentang Perusahaan Kami</h1>
+      <section class="two-columns-flex">
+        <div class="flex-content red-border">
+          <img
+            id="img-perusahaan-kami"
+            src="about_company_profile 1.jpg"
+            alt="Gambar Perusahaan"
+          />
+        </div>
+        <div class="flex-content">
+          <p>
+            Rhoncus eget ut lacus sed euismod id cras enim eu.
+            <em>Lobortis integer at mi eget</em> Tellus a elementum malesuada mi
+            placerat massa. Sagittis viverra habitasse nunc tortor urna diam
+            diam sem eget. Fusce lorem ame sed phasellus nunc et quam.
+            <strong>Sed proin urna tincidunt massa</strong>. Varius congue dolor
+            ipsum adipiscing.
+            <strong
+              >Fermentum urna nullam nibh senectus gravida leo morbi elementum
+              arcu</strong
+            >.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2: Struktur Perusahaan -->
+      <h2>A. Struktur Perusahaan</h2>
+      <section class="two-columns-flex">
+        <div
+          class="flex-content black-border text-center vertical-align-center"
+        >
+          <p>1.CEO : George Phillips</p>
+        </div>
+        <div class="flex-content black-border">
+          <ol class="text-center">
+            <li>CEO: George Philips</li>
+            <li>CTO: Vishal Singh</li>
+          </ol>
+          <ul>
+            <li>
+              <strong>Divisi Finance & Accounting</strong>
+              <ol class="ordered-list-lower-alpha">
+                <li>Manager: Jill Wright</li>
+                <li>
+                  Anggota Tim:
+                  <ol class="ordered-list-lower-roman">
+                    <li>Jacob Hayes</li>
+                    <li>Louis Tomlinson</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Divisi IT Technology</strong>
+              <ol class="ordered-list-lower-alpha">
+                <li>Manager: Aditya Ishaan Akhil</li>
+                <li>
+                  Anggota Tim:
+                  <ol class="ordered-list-lower-roman">
+                    <li>Josephine Larson</li>
+                    <li>Ravindra Singh</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Section 3: Form Registrasi Karyawan -->
+      <section>
+        <h2>B. Form Registrasi Karyawan Baru</h2>
+        <p>
+          Mohon untuk mengisi form dibawah ini untuk registrasi karyawan baru.
+        </p>
+        <form action="">
+          <div class="block">
+            <label for="txtNamaLengkap">Nama Lengkap</label>
+            <input
+              id="txtNamaLengkap"
+              name="txtNamaLengkap"
+              type="text"
+              class="class-w-300-30"
+              placeholder="Masukkan Nama Lengkap"
+            />
+          </div>
+
+          <div class="block">
+            <label for="dtTanggalLahir">Tanggal Lahir</label>
+            <input
+              type="date"
+              name="dtTanggalLahir"
+              id="dtTanggalLahir"
+              class="class-w-300-30"
+            />
+          </div>
+
+          <div class="block">
+            <label for="txtEmail">Email</label>
+            <input
+              id="txtEmail"
+              name="txtEmail"
+              type="email"
+              class="class-w-300-30"
+              placeholder="example@company.com"
+            />
+          </div>
+
+          <div class="block-group">
+            <p>Pilih divisi untuk karyawan baru</p>
+            <ul class="unordered--list--form">
+              <li class="list--form">
+                <input
+                  type="radio"
+                  name="rdDivision"
+                  id="rdDivisionFinance"
+                  value="Finance"
+                />
+                <label for="rdDivisionFinance"
+                  >Divisi Finance & Accounting</label
+                >
+              </li>
+              <li class="list--form">
+                <input
+                  type="radio"
+                  name="rdDivision"
+                  id="rdDivisionIT"
+                  value="IT"
+                />
+                <label for="rdDivisionIT">Divisi IT Technology</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block--group">
+            <p>
+              Pilih jadwal hari untuk WFO dalam satu minggu, sesuai dengan
+              divisi yang dipilih
+            </p>
+            <ul class="unordered--list--form">
+              <li class="list--form">
+                <input
+                  type="checkbox"
+                  name="chkJadwalWFO"
+                  id="chkHariSenin"
+                  value="1"
+                />
+                <label for="chkHariSenin">Senin</label>
+              </li>
+              <li class="list--form">
+                <input
+                  type="checkbox"
+                  name="chkJadwalWFO"
+                  id="chkHariSelasa"
+                  value="2"
+                />
+                <label for="chkHariSelasa">Selasa</label>
+              </li>
+              <li class="list--form">
+                <input
+                  type="checkbox"
+                  name="chkJadwalWFO"
+                  id="chkHariRabu"
+                  value="3"
+                />
+                <label for="chkHariRabu">Rabu</label>
+              </li>
+              <li class="list--form">
+                <input
+                  type="checkbox"
+                  name="chkJadwalWFO"
+                  id="chkHariKamis"
+                  value="4"
+                />
+                <label for="chkHariKamis">Kamis</label>
+              </li>
+              <li class="list--form">
+                <input
+                  type="checkbox"
+                  name="chkJadwalWFO"
+                  id="chkHariJumat"
+                  value="5"
+                />
+                <label for="chkHariJumat">Jumat</label>
+              </li>
+            </ul>
+          </div>
+          <div class="block">
+            <label for="upFileIDCard">Lampirkan Foto ID Card Pegawai</label>
+            <input type="file" name="upFileIDCard" id="upFileIDCard" />
+          </div>
+
+          <div class="block">
+            <label for="txtNotes"
+              >Jika terdapat notes lainnya, mohon dapat ditulis dibawah</label
+            >
+            <textarea
+              name="txtNotes"
+              id="txtNotes"
+              placeholder="Masukkan Notes..."
+            ></textarea>
+          </div>
+          <div class="block">
+            <button type="submit" class="btn--submit--form">Submit Form</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+
+      <!-- Section 4: Tabel Data Karyawan -->
+      <section>
+        <h2>C. Tabel Data Karyawan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID Karyawan</th>
+              <th>Nama Lengkap</th>
+              <th>Divisi</th>
+              <th>Jadwal WFO</th>
+              <th>Alamat Email</th>
+              <th>Foto Karyawan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>IT Technology</td>
+              <td>Selasa, Rabu, Jumat</td>
+              <td>johndoe@company.com</td>
+              <td>
+                <img
+                  class="foto--karyawan"
+                  src="karyawan-2.jpg"
+                  alt="Foto Karyawan"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Christina Liauw</td>
+              <td>Finance & Accounting</td>
+              <td>Senin, Selasa, Kamis</td>
+              <td>christinaliauw@company.com</td>
+              <td>
+                <img
+                  class="foto--karyawan"
+                  src="karyawan-1.jpg"
+                  alt="Foto Karyawan"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

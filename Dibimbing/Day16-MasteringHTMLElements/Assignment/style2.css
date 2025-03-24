@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+}
+
+#img-perusahaan-kami {
+  width: 550px;
+  height: 330px;
+}
+
+/* Section 3 - Form Registrasi */
+.block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.class-w-300-30 {
+  width: 300px;
+  height: 30px;
+}
+
+.block label,
+.block input {
+  display: block;
+}
+
+.list--form {
+  list-style: none;
+}
+
+.ordered-list-lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.ordered-list-lower-roman {
+  list-style-type: lower-roman;
+}
+
+.unordered--list--form {
+  padding-left: 0;
+}
+
+input[type="radio"]:checked {
+  background-color: #465fff;
+  border-color: #465fff;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #465fff;
+  border-color: #465fff;
+}
+
+#txtNotes {
+  width: 300px;
+  height: 100px;
+}
+
+.btn--submit--form {
+  width: 125px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+/* Section 4 - Table Karyawan */
+table {
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 7px;
+}
+
+.foto--karyawan {
+  width: 120px;
+  height: 80px;
+}
+
+.container {
+  width: 90%;
+  margin: 1% auto;
+}
+
+.two-columns-flex {
+  display: flex;
+}
+
+.flex-content {
+  padding: 2%;
+}
+
+.title {
+  text-align: center;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
+.black-border {
+  border: 2px solid black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-align-center {
+  vertical-align: middle;
+  justify-content: center;
+}

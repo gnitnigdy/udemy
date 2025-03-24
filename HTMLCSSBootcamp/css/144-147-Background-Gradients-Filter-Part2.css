@@ -1,0 +1,42 @@
+.box {
+  border: 2px solid black;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(
+    37deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    purple
+  );
+}
+
+.box2 {
+  border: 2px solid black;
+  width: 100%;
+  height: 400px;
+  background-image: conic-gradient(wheat, silver, indigo, aquamarine, wheat);
+}
+
+.box3 {
+  border: 2px solid black;
+  width: 100%;
+  height: 400px;
+  /* background shorthand -> background:  */
+  background: url("/udemy/HTMLCSSBootcamp/assets/section17/Starter/images/peacock.png")
+    no-repeat center/75%;
+}
+
+.box4 {
+  border: 2px solid black;
+  width: 100%;
+  height: 400px;
+  background: url("/udemy/HTMLCSSBootcamp/assets/section17/Starter/images/people.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale() contrast(45%);
+}

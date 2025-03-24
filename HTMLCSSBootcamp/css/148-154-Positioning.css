@@ -1,0 +1,25 @@
+p {
+  border: 1px solid black;
+  width: 500px;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+#special {
+  position: relative;
+  left: 150px;
+  background-color: azure;
+}
+
+.absolute-container {
+  position: relative;
+}
+
+.content {
+  background-color: cadetblue;
+}
+
+#special-absolute-content {
+  background-color: bisque;
+  position: absolute;
+}

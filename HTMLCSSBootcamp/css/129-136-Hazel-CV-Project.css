@@ -118,3 +118,54 @@ body {
 .blog-post p {
   margin: 8px 0;
 }
+
+/* events section */
+.events-section {
+  display: inline-block;
+  width: 100%;
+  padding: 64px 0;
+  background-color: #fdf0e6;
+}
+
+.events-content {
+  padding: 0 15%;
+}
+
+.events-card {
+  width: 50%;
+  float: left;
+}
+
+.events-card p {
+  margin: 8px 0;
+}
+
+.events-title {
+  font-size: 1.5rem;
+}
+
+.events-location {
+  font-size: 1rem;
+}
+
+.events-card .events-date {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 32px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 60px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 8px;
+}
