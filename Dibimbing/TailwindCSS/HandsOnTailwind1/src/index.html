@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Hands On 1</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-gray-900 p-4">
+        <!-- container untuk flex -->
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+          <!-- untuk logo -->
+          <div class="text-white text-2xl font-semibold">MEVVAH</div>
+          <!-- untuk link menu -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-white hover:text-red-300">Home</a>
+            <a href="#" class="text-white hover:text-red-300">About Us</a>
+            <a href="#" class="text-white hover:text-red-300">Special Menu</a>
+            <a href="#" class="text-white hover:text-red-300">Events</a>
+            <a href="#" class="text-white hover:text-red-300">Reservation</a>
+          </div>
+          <!-- untuk hamburger button -->
+          <div class="md:hidden flex items-center">
+            <button id="hamburger" class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu (hidden by default) -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden flex flex-col items-center bg-gray-900 space-y-4 py-4"
+        >
+          <a href="#" class="text-white hover:text-gray-300">Home</a>
+          <a href="#" class="text-white hover:text-gray-300">About</a>
+          <a href="#" class="text-white hover:text-gray-300">Services</a>
+          <a href="#" class="text-white hover:text-gray-300">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="h-200 relative bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./restoran2.jpeg')"
+      >
+        <!-- overlay parts -->
+        <div class="bg-black absolute inset-0 opacity-65"></div>
+        <div
+          class="text-white relative z-10 text-center h-full flex flex-col items-center justify-center px-6"
+        >
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">
+            MEVVAH Restaurant & Cafe
+          </h1>
+          <p class="text-xl md:text-2xl mb-8">
+            Experience Exquisite Flavors and Class
+          </p>
+          <div class="flex flex-col gap-3 md:flex-row">
+            <a
+              href="#"
+              class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-full transition duration-300"
+              >Special Menu</a
+            >
+            <a
+              href="#"
+              class="bg-transparent border border-white hover:bg-white hover:text-black text-white py-3 px-6 rounded-full transition duration-300"
+              >Reservation</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="about" class="py-16 bg-white overflow-hidden">
+        <div
+          class="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center fade-in"
+        >
+          <!-- Text Content -->
+          <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+            <h2
+              class="text-4xl font-bold text-red-600 mb-4 text-center md:text-left"
+            >
+              About Us
+            </h2>
+            <p class="text-gray-600 mb-6 text-center md:text-left">
+              Welcome to <strong>MEVVAH Restaurant & Cafe</strong>, the premier
+              culinary destination that seamlessly combines an elegant
+              atmosphere with unparalleled flavors. We present high-quality
+              dishes crafted by experienced chefs using only the finest
+              ingredients. With a modern interior design and a warm, inviting
+              ambiance, we invite you to indulge in a luxurious and memorable
+              dining experience.
+            </p>
+            <a
+              href="#"
+              class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-full transition duration-300"
+              >Special Menu</a
+            >
+          </div>
+
+          <!-- Image -->
+          <div
+            class="w-full lg:w-1/2 flex justify-center lg:justify-end mb-8 lg:mb-0"
+          >
+            <img
+              src="./restoran1.jpg"
+              alt="Restoran Mewah"
+              class="rounded-2xl shadow-lg max-w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Special Menu Section -->
+      <section
+        id="special-menu"
+        class="bg-white text-gray-800 py-16 px-6 lg:px-20"
+      >
+        <div class="container mx-auto">
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-red-600 mb-4">
+              Our Special Menu
+            </h2>
+            <p class="text-gray-600">
+              Indulge in our carefully curated signature dishes.
+            </p>
+          </div>
+
+          <!-- Menu Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-red-50"
+            >
+              <img
+                src="./steak-1.jpg"
+                alt="Dish 1"
+                class="rounded-xl mb-4 w-full object-cover aspect-video"
+              />
+              <h3 class="text-xl font-semibold mb-2">Truffle Steak</h3>
+              <p class="text-gray-500">
+                Juicy steak infused with black truffle and aromatic herbs.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-red-50"
+            >
+              <img
+                src="./steak-2.jpg"
+                alt="Dish 2"
+                class="rounded-xl mb-4 w-full object-cover aspect-video"
+              />
+              <h3 class="text-xl font-semibold mb-2">Lobster Bisque</h3>
+              <p class="text-gray-500">
+                Rich and creamy soup with fresh lobster and herbs.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-red-50"
+            >
+              <img
+                src="./steak-3.jpg"
+                alt="Dish 3"
+                class="rounded-xl mb-4 w-full object-cover aspect-video"
+              />
+              <h3 class="text-xl font-semibold mb-2">Saffron Risotto</h3>
+              <p class="text-gray-500">
+                Creamy risotto with saffron and parmesan cheese.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl shadow-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-red-50"
+            >
+              <img
+                src="./steak-4.jpg"
+                alt="Dish 4"
+                class="rounded-xl mb-4 w-full object-cover aspect-video"
+              />
+              <h3 class="text-xl font-semibold mb-2">Caviar Delight</h3>
+              <p class="text-gray-500">
+                Exquisite caviar served with fine blinis and creme fraiche.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Events Section -->
+      <section id="events" class="py-16 bg-white">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+          <h2 class="text-4xl font-bold text-red-600 mb-10">
+            Our Special Events
+          </h2>
+
+          <!-- Carousel -->
+          <div class="carousel-container relative">
+            <div class="carousel-track">
+              <!-- Event 1 -->
+              <div class="carousel-item">
+                <img
+                  src="./steak-1.jpg"
+                  alt="Event 1"
+                  class="rounded-lg mb-4 w-full h-80 object-cover"
+                />
+                <h3 class="text-2xl font-bold mb-2">Grand Opening Night</h3>
+                <p class="text-gray-600 mb-4">
+                  Indulge in our special menu and live music entertainment as we
+                  celebrate our grand opening.
+                </p>
+              </div>
+
+              <!-- Event 2 -->
+              <div class="carousel-item">
+                <img
+                  src="./steak-2.jpg"
+                  alt="Event 2"
+                  class="rounded-lg mb-4 w-full h-80 object-cover"
+                />
+                <h3 class="text-2xl font-bold mb-2">Wine Tasting Event</h3>
+                <p class="text-gray-600 mb-4">
+                  Experience a selection of premium wines perfectly paired with
+                  our exquisite dishes.
+                </p>
+              </div>
+
+              <!-- Event 3 -->
+              <div class="carousel-item">
+                <img
+                  src="./steak-3.jpg"
+                  alt="Event 3"
+                  class="rounded-lg mb-4 w-full h-80 object-cover"
+                />
+                <h3 class="text-2xl font-bold mb-2">Luxury Buffet</h3>
+                <p class="text-gray-600 mb-4">
+                  Enjoy luxurious dining with our special weekend buffet.
+                </p>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button
+              id="prevButton"
+              class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition"
+            >
+              &#10094;
+            </button>
+            <button
+              id="nextButton"
+              class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full hover:bg-red-700 transition"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Reservation Section -->
+      <section
+        id="reservation"
+        class="bg-white text-gray-800 py-16 px-6 lg:px-20"
+      >
+        <div class="container mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-red-600 mb-4">Reservation</h2>
+            <p class="text-gray-600">
+              Book your exclusive dining experience with us. We look forward to
+              serving you.
+            </p>
+          </div>
+
+          <!-- Reservation Form -->
+          <div
+            class="max-w-3xl mx-auto bg-white rounded-2xl p-8 shadow-xl border border-black-200"
+          >
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Name -->
+                <div>
+                  <label for="name" class="block text-sm font-medium mb-1"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label for="email" class="block text-sm font-medium mb-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Phone Number -->
+              <div>
+                <label for="phone" class="block text-sm font-medium mb-1"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                  placeholder="Your Phone Number"
+                  required
+                />
+              </div>
+
+              <!-- Date & Time -->
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Date -->
+                <div>
+                  <label for="date" class="block text-sm font-medium mb-1"
+                    >Date</label
+                  >
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                    required
+                  />
+                </div>
+
+                <!-- Time -->
+                <div>
+                  <label for="time" class="block text-sm font-medium mb-1"
+                    >Time</label
+                  >
+                  <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Guests -->
+              <div>
+                <label for="guests" class="block text-sm font-medium mb-1"
+                  >Number of Guests</label
+                >
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                  placeholder="Enter number of guests"
+                  min="1"
+                  required
+                />
+              </div>
+
+              <!-- Special Requests -->
+              <div>
+                <label for="requests" class="block text-sm font-medium mb-1"
+                  >Special Requests</label
+                >
+                <textarea
+                  id="requests"
+                  name="requests"
+                  rows="4"
+                  class="w-full rounded-lg p-3 bg-gray-100 border border-gray-300 focus:ring-red-600 focus:border-red-600"
+                  placeholder="Any special requests..."
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center mt-6">
+                <button
+                  type="submit"
+                  class="bg-red-600 text-white py-3 px-6 rounded-full shadow-lg hover:bg-red-700 transition-all"
+                >
+                  Make Reservation
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6 lg:px-20">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8"
+        >
+          <!-- Brand Section -->
+          <div class="mb-8 lg:mb-0">
+            <h3
+              class="text-3xl font-bold text-white-600 mb-2 sm:text-left text-center"
+            >
+              MEVVAH Restarurant & Cafe
+            </h3>
+            <p class="text-gray-400 sm:text-left text-center">
+              A Luxury Restaurant Serving the Finest Dishes by Renowned Chefs.
+            </p>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="grid grid-cols-2 gap-8 lg:grid-cols-4 text-sm">
+            <div>
+              <h4 class="font-semibold text-white mb-2">Menu</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li>
+                  <a href="#home" class="hover:text-red-300 transition">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="hover:text-red-300 transition"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#menu" class="hover:text-red-300 transition"
+                    >Special Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="#events" class="hover:text-red-300 transition"
+                    >Events</a
+                  >
+                </li>
+                <li>
+                  <a href="#events" class="hover:text-red-300 transition"
+                    >Reservation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white mb-2">Support</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li>
+                  <a href="#" class="hover:text-red-300 transition">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-red-300 transition"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-red-300 transition"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-red-300 transition"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white mb-2">Social Media</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li>
+                  <a href="#" class="hover:text-red-300 transition"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-red-300 transition">Facebook</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-red-300 transition">Twitter</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-red-300 transition">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white mb-2">Contact</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li>123 Luxury St., Jakarta, Indonesia</li>
+                <li>+62 812 3456 7890</li>
+                <li>contact@legrandeur.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm"
+        >
+          &copy; 2025 MEVVAH Group. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Toggle mobile menu visibility
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const aboutSection = document.querySelector(".fade-in");
+        setTimeout(() => {
+          aboutSection.classList.add("show");
+        }, 200);
+      });
+
+      const track = document.querySelector(".carousel-track");
+      const items = document.querySelectorAll(".carousel-item");
+      const prevButton = document.getElementById("prevButton");
+      const nextButton = document.getElementById("nextButton");
+
+      let currentIndex = 0;
+
+      function updateCarousel() {
+        const width = items[0].clientWidth;
+        track.style.transform = `translateX(-${currentIndex * width}px)`;
+      }
+
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < items.length - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0; // Loop kembali ke awal
+        }
+        updateCarousel();
+      });
+
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = items.length - 1; // Loop ke akhir
+        }
+        updateCarousel();
+      });
+
+      window.addEventListener("resize", updateCarousel);
+    </script>
+  </body>
+</html>
