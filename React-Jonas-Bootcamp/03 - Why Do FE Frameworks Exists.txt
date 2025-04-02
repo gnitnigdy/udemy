@@ -1,0 +1,10 @@
+Why Exist?
+Answer: Becasue keeping a user interface in sync with data is really hard and a lot of works.
+
+So Framework make developers can focus on the sync data itself or the user interface it self.
+
+The second answer is:
+Enforce a correct way of structuring and writing code, preventing creating a spaghetti codes.
+
+The third answer is:
+Give developers and teams a consistent way of building front-end applications.

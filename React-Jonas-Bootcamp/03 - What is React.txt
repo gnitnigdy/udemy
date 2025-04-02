@@ -1,0 +1,26 @@
+React is extremely popular, declarative, component-based, state driven Javascript Library for Building user interfaces created by Facebook.
+
+Component based design:
+Components are the building blocks of the user interfaces in React.
+
+Declarative means:
+1. Describing how components look like and how they work using a declarative syntax called JSX.
+2. Telling react what a component should look like based on current data/state.
+3. React is abstraction away from DOM: we never touch the DOM.
+4. Using JSX means a syntax that combines HTML, CSS, Javascript as well referencing other components.
+
+
+State driven:
+Rendering something to browser by change of state.
+REACT reacts to state changes by re-rendering the UI.
+
+
+React is framework or library?
+Answer: React is Library.
+React is only the view layer. We need to pick multiple external libraries to build a complete applications.
+
+React is extremely POPULAR.
+Many large companies adopting react and created huge demands for react developers.
+Large community of React Developers.
+
+Created by Facebook (Jordan Walke)

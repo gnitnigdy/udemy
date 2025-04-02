@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white shadow-md">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <!-- Logo/Branding -->
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              aria-label="Main menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex-shrink-0">
+              <h1 class="text-2xl font-semibold">Nama Kamu</h1>
+            </div>
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <a
+                  href="#about"
+                  class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Tentang</a
+                >
+                <a
+                  href="#projects"
+                  class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Proyek</a
+                >
+                <a
+                  href="#skills"
+                  class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Keahlian</a
+                >
+                <a
+                  href="#contact"
+                  class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >Kontak</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (for small screens) -->
+      <div class="sm:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a
+            href="#about"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Tentang</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Proyek</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Keahlian</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >Kontak</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Placeholder -->
+    <div class="py-20 text-center">
+      <h2 class="text-4xl font-bold text-gray-800">
+        Selamat datang di Portofolio saya!
+      </h2>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-gradient-to-r from-blue-500 to-teal-500 text-white"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 py-24 relative z-10">
+        <div class="text-center">
+          <h2 class="text-4xl font-bold sm:text-5xl mb-4">
+            Halo, saya <span class="text-yellow-300">Nama Kamu</span>
+          </h2>
+          <p class="text-lg sm:text-xl mb-8">
+            Frontend Developer | Desainer Web | Pembuat Solusi Digital
+          </p>
+          <a
+            href="#about"
+            class="inline-block bg-yellow-300 text-gray-800 font-semibold py-3 px-6 rounded-full text-lg transition duration-300 hover:bg-yellow-400 hover:text-white"
+            >Pelajari Lebih Lanjut</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Tentang Saya</h2>
+          <p class="text-lg text-gray-500 mt-4">
+            Pengenalan singkat tentang diri saya, latar belakang, dan keahlian
+            yang saya miliki.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-10"
+        >
+          <!-- Foto Profil -->
+          <div class="flex-shrink-0">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Foto Profil"
+              class="rounded-full w-64 h-64 object-cover shadow-lg"
+            />
+          </div>
+
+          <!-- Deskripsi -->
+          <div class="flex-1 text-center sm:text-left">
+            <p class="text-xl text-gray-700 mb-6">
+              Halo! Nama saya <strong>Nama Kamu</strong>, seorang Frontend
+              Developer dan Web Designer dengan pengalaman lebih dari 3 tahun di
+              industri teknologi. Saya berfokus pada pembuatan website yang
+              responsif dan menarik, serta pengalaman pengguna yang luar biasa.
+            </p>
+            <p class="text-lg text-gray-600 mb-6">
+              Saya sangat bersemangat dalam mempelajari teknologi baru dan
+              selalu berusaha meningkatkan keterampilan saya. Di waktu luang,
+              saya suka mengeksplorasi desain UI/UX dan mengerjakan
+              proyek-proyek open source.
+            </p>
+            <p class="text-lg text-gray-600">
+              Selain pengembangan web, saya memiliki ketertarikan dalam desain
+              grafis, animasi web, dan optimasi kinerja aplikasi web. Tujuan
+              saya adalah untuk memberikan pengalaman terbaik kepada pengguna
+              melalui kode yang efisien dan desain yang intuitif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="projects" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Proyek Saya</h2>
+          <p class="text-lg text-gray-500 mt-4">
+            Berikut adalah beberapa proyek yang saya kerjakan. Klik untuk
+            melihat detail lebih lanjut!
+          </p>
+        </div>
+
+        <!-- Grid of Projects -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- Project 1 -->
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Proyek 1"
+              class="w-full h-64 object-cover transition duration-300 hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-50 hover:opacity-0 transition duration-300"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4"
+            >
+              <h3 class="text-2xl text-white font-semibold">
+                Proyek 1: Nama Proyek
+              </h3>
+              <p class="text-white mt-2">
+                Deskripsi singkat tentang proyek ini. Teknologi yang digunakan:
+                HTML, CSS, JavaScript, React.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Proyek 2"
+              class="w-full h-64 object-cover transition duration-300 hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-50 hover:opacity-0 transition duration-300"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4"
+            >
+              <h3 class="text-2xl text-white font-semibold">
+                Proyek 2: Nama Proyek
+              </h3>
+              <p class="text-white mt-2">
+                Deskripsi singkat tentang proyek ini. Teknologi yang digunakan:
+                HTML, CSS, JavaScript, Node.js.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img
+              src="https://via.placeholder.com/400x250"
+              alt="Proyek 3"
+              class="w-full h-64 object-cover transition duration-300 hover:scale-105"
+            />
+            <div
+              class="absolute inset-0 bg-black opacity-50 hover:opacity-0 transition duration-300"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4"
+            >
+              <h3 class="text-2xl text-white font-semibold">
+                Proyek 3: Nama Proyek
+              </h3>
+              <p class="text-white mt-2">
+                Deskripsi singkat tentang proyek ini. Teknologi yang digunakan:
+                Vue.js, Tailwind CSS, Firebase.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tambahkan proyek lainnya sesuai kebutuhan -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Hubungi Saya</h2>
+          <p class="text-lg text-gray-500 mt-4">
+            Jika Anda memiliki pertanyaan atau ingin bekerja sama, kirimkan
+            pesan melalui formulir di bawah ini.
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="flex justify-center">
+          <form
+            action="#"
+            method="POST"
+            class="w-full sm:w-2/3 lg:w-1/2 bg-white p-8 rounded-lg shadow-lg"
+          >
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-semibold"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full p-3 border border-gray-300 rounded-md mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-semibold"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full p-3 border border-gray-300 rounded-md mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-semibold"
+                >Pesan</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full p-3 border border-gray-300 rounded-md mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-blue-500 text-white py-3 px-6 rounded-md font-semibold text-lg hover:bg-blue-600 transition duration-300"
+              >
+                Kirim Pesan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Social Media Section -->
+    <section id="social-media" class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">
+            Ikuti Saya di Sosial Media
+          </h2>
+          <p class="text-lg text-gray-500 mt-4">
+            Saya aktif di beberapa platform sosial media. Anda dapat mengikuti
+            saya untuk tetap terhubung!
+          </p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="flex justify-center space-x-8">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/yourusername"
+            target="_blank"
+            class="text-gray-800 hover:text-blue-600 text-4xl transition duration-300"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/yourusername"
+            target="_blank"
+            class="text-gray-800 hover:text-blue-700 text-4xl transition duration-300"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/yourusername"
+            target="_blank"
+            class="text-gray-800 hover:text-pink-600 text-4xl transition duration-300"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12">
+        <div class="flex justify-between items-center">
+          <!-- Logo / Nama / Deskripsi Singkat -->
+          <div class="flex items-center">
+            <h1 class="text-2xl font-semibold">Nama Kamu</h1>
+          </div>
+
+          <!-- Links -->
+          <div class="flex space-x-8">
+            <a href="#about" class="text-gray-300 hover:text-white">Tentang</a>
+            <a href="#projects" class="text-gray-300 hover:text-white"
+              >Proyek</a
+            >
+            <a href="#contact" class="text-gray-300 hover:text-white">Kontak</a>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 Nama Kamu. Semua hak cipta dilindungi.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
