@@ -66,25 +66,34 @@ function Header() {
 }
 
 function Menu() {
+  const pizzas = pizzaData;
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      {/* <Pizza
-        name="Pizza Spinaco"
-        ingredients="Tomato, mozarella, spinach, and ricotta cheese"
-        photoName="03-pizza-menu/starter/pizzas/spinaci.jpg"
-        price="10"
-      /> */}
-      {pizzaData.map((pizza) => {
-        return (
-          <Pizza
-            name={pizza.name}
-            ingredients={`${pizza.ingredients}`}
-            photoName={`03-pizza-menu/starter/${pizza.photoName}`}
-            price={parseInt(pizza.price)}
-          />
-        );
-      })}
+      {pizzas.length > 0 ? (
+        <>
+          <p>
+            Authentic Italian Cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => {
+              return (
+                <Pizza
+                  key={pizza.name}
+                  name={pizza.name}
+                  ingredients={`${pizza.ingredients}`}
+                  photoName={`03-pizza-menu/starter/${pizza.photoName}`}
+                  price={parseInt(pizza.price)}
+                  soldOut={pizza.soldOut}
+                />
+              );
+            })}
+          </ul>
+        </>
+      ) : (
+        <p>We are still working on our menu. Please come back later :)</p>
+      )}
     </main>
   );
 }
@@ -92,14 +101,14 @@ function Menu() {
 function Pizza(props) {
   console.log(props);
   return (
-    <div className="pizza">
+    <li className={`pizza ${props.soldOut ? "sold-out" : ""}`}>
       <img src={props.photoName} alt={props.name} />
       <div>
         <h3>{props.name}</h3>
         <p>{props.ingredients}</p>
-        <span>{parseInt(props.price) + 3}</span>
+        <span>{props.soldOut ? "Sold Out" : parseInt(props.price) + 3}</span>
       </div>
-    </div>
+    </li>
   );
 }
 
@@ -111,10 +120,28 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {isOpen
+      {/* {isOpen
         ? "We are currently open"
-        : `Operations hour is between ${openHour}:00 and ${closeHour}:00`}
+        : `Operations hour is between ${openHour}:00 and ${closeHour}:00`} */}
+      {isOpen ? (
+        <Order closeTime={closeHour}></Order>
+      ) : (
+        <p>
+          We are happy to welcome you between ${openHour}:00 and ${closeHour}:00
+        </p>
+      )}
     </footer>
+  );
+}
+
+function Order(props) {
+  console.log(`ini props`);
+  const { closeTime } = props;
+  return (
+    <div className="order">
+      <p>We're open until {closeTime}:00. Come visit us or order online.</p>
+      <button className="btn">Order</button>
+    </div>
   );
 }
 
