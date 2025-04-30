@@ -5,6 +5,7 @@ export default function PackingList({ props, onDeleteItem, onPackedItem }) {
   console.log("ini data props: ", dataProps);
 
   const [sortBy, setSortBy] = useState("packed");
+  console.log(setSortBy);
 
   return (
     <div className="list">
