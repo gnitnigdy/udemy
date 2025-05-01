@@ -13,7 +13,9 @@ export default function Stats({ props }) {
 
   return (
     <footer className="stats">
-      {percentagePacked !== 100 ? (
+      {dataItem.length <= 0 ? (
+        <em>Please add your item first!</em>
+      ) : percentagePacked !== 100 ? (
         <em>
           You have {dataItem.length} items on your list, and you already packed{" "}
           {thingsPacked.length} ({percentagePacked}%)

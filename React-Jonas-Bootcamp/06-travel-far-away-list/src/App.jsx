@@ -40,6 +40,11 @@ export default function App() {
     );
   }
 
+  function handleClearList() {
+    const confirmation = window.confirm("Are you sure want to clear the list?");
+    confirmation ? setInitialItems2([]) : "";
+  }
+
   return (
     <div className="app">
       <Logo />
@@ -49,6 +54,7 @@ export default function App() {
         props={initialItems2}
         onDeleteItem={handleDeleteItem}
         onPackedItem={handlePackedItem}
+        onClearItem={handleClearList}
       />
       <Stats props={initialItems2} />
     </div>

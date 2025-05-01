@@ -80,7 +80,7 @@ function App() {
 
   const [step, setStep] = useState(1);
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   console.log("hasil fetch: ", dataAPI);
 
@@ -104,22 +104,20 @@ function App() {
             <div className={step === 2 ? "active" : ""}>2</div>
             <div className={step === 3 ? "active" : ""}>3</div>
           </div>
-          <p className="message">
-            Step {step}: {messages[step - 1]}
-          </p>
+          <StepMessage step={step}>{messages[step - 1]}</StepMessage>
           <div className="buttons">
-            <button
-              style={{ backgroundColor: "#7950f2", color: "#fff" }}
-              onClick={prevButton}
+            <Button
+              btnStyle={{ backgroundColor: "#7950f2", color: "#fff" }}
+              onClickEvents={prevButton}
             >
-              Previous
-            </button>
-            <button
-              style={{ backgroundColor: "#7950f2", color: "#fff" }}
-              onClick={nextButton}
+              👈 Previous
+            </Button>
+            <Button
+              btnStyle={{ backgroundColor: "#7950f2", color: "#fff" }}
+              onClickEvents={nextButton}
             >
-              Next
-            </button>
+              Next 👉
+            </Button>
           </div>
         </div>
       )}
@@ -146,6 +144,23 @@ function App() {
         );
       })}
     </>
+  );
+}
+
+function Button({ btnStyle, onClickEvents, children }) {
+  return (
+    <button style={btnStyle} onClick={onClickEvents}>
+      {children}
+    </button>
+  );
+}
+
+function StepMessage({ step, children }) {
+  return (
+    <p className="message">
+      <h3>Step {step}</h3>
+      {children}
+    </p>
   );
 }
 
